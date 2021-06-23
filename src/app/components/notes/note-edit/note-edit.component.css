@@ -1,0 +1,46 @@
+.content {
+  width: 96%;
+  margin: 7px;
+  border: 1px solid #d1d3cc;
+  border-radius: 5px;
+}
+.heading {
+  width: 96%;
+  margin: 7px;
+  border: 1px solid #d1d3cc;
+}
+.note-edit-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+  height: 50px;
+}
+
+.note-edit-heading {
+  margin-bottom: 20px;
+}
+button {
+  margin: 5px;
+  height: 26px;
+  background-color: #e9d283;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+}
+button:hover {
+  background-color: #ebece7;
+  color: black;
+  border: 1px solid black;
+}
+button:disabled {
+  background-color: #d1d7e0;
+  color: black;
+  cursor: not-allowed;
+}
+button[disabled]:hover {
+  border: 1px solid white;
+  cursor: not-allowed;
+}
+label {
+  margin-left: 8px;
+}

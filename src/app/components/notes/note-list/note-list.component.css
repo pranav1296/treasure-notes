@@ -1,0 +1,38 @@
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+  border-bottom: 1px solid #d1d3cc;
+  border-top: 1px solid #d1d3cc;
+}
+.notes-wrapper {
+  grid-column: span 6;
+  display: flex;
+  justify-content: flex-end;
+}
+.button-wrapper {
+  grid-column: span 4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5px;
+}
+.logout-wrapper {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  padding-right: 5px;
+}
+.add-note {
+  background-color: #e9d283;
+  border: 1px white solid;
+  color: white;
+  width: 70px;
+  padding: 4px;
+  border-radius: 3px;
+}
+.add-note:hover {
+  background-color: #ebece7;
+  color: black;
+  border: 1px solid black;
+}

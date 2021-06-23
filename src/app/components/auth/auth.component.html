@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="errorMessage">{{errorMessage}}</div>
+  <form (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm">
+    <div>
+      <label for="email"><b>Email</b></label>
+      <input id="email" type="email" name="email" ngModel required email placeholder="Enter Email"/>
+    </div>
+    <div>
+        <label for="password"><b>Password</b></label>
+        <input id="password" type="password" name="password" ngModel required minlength="6" placeholder="Enter Password">
+    </div>
+    <div>
+        <button type="submit" [disabled]="!loginForm.valid">{{isLogin ? 'Login': 'Sign up'}}</button>
+        <button type="button" (click)="onSwitchMode()">Switch to {{isLogin ? 'Sign up': 'Login'}}</button>
+    </div>
+  </form>
+</div>

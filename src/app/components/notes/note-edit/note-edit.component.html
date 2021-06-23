@@ -1,0 +1,29 @@
+<div>
+  <form [formGroup]="noteForm" (ngSubmit)="onSubmit()">
+    <div class="note-edit-wrapper">
+      <button type="submit" [disabled]="!noteForm.valid">Save</button>
+      <button type="button" (click)="onCancel()">Cancel</button>
+    </div>
+    <div class="note-edit-heading">
+      <label for="note">Heading</label>
+      <input
+        class="heading"
+        type="text"
+        name="heading"
+        id="heading"
+        formControlName="heading"
+      />
+    </div>
+    <div>
+      <label for="content">Note</label>
+      <textarea
+        class="content"
+        type="textarea"
+        rows="20"
+        name="content"
+        id="content"
+        formControlName="content"
+      ></textarea>
+    </div>
+  </form>
+</div>

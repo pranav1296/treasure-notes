@@ -1,0 +1,16 @@
+<div class="row">
+  <h1 class="notes-wrapper">Notes</h1>
+  <div class="button-wrapper">
+    <button class="add-note" (click)="addNewNote()">Add Note</button>
+  </div>
+  <div class="logout-wrapper">
+    <button class="add-note" (click)="onLogout()">Logout</button>
+  </div>
+</div>
+<div>
+  <app-note-item
+    *ngFor="let noteEl of notes; let i = index"
+    [note]="noteEl"
+    [index]="i"
+  ></app-note-item>
+</div>

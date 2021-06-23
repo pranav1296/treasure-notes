@@ -1,0 +1,26 @@
+.edit-delete-button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+  height: 50px;
+}
+button {
+  margin: 5px;
+  height: 26px;
+  background-color: #e9d283;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+}
+button:hover {
+  background-color: #ebece7;
+  color: black;
+  border: 1px solid black;
+}
+h3 {
+  padding-left: 20px;
+  font-size: 20px;
+}
+p {
+  padding: 0 20px 0 20px;
+}

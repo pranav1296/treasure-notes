@@ -1,0 +1,21 @@
+.note-heading {
+  font-size: 20px;
+}
+.note {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 3px;
+}
+.note-content {
+  font-size: 14px;
+  color: #696969;
+}
+.note-item:hover {
+  background-color: #e9d283;
+  border: 1px solid #e9d283;
+}
+.note-item {
+  /* padding: 6px; */
+  margin-left: 2px;
+}
