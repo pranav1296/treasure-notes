@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import * as CryptoJS from 'crypto-js';
 
 @Injectable({
   providedIn: 'root'
@@ -42,7 +41,6 @@ export class EncryptDecryptDataService {
       encryptedNotes
     );
     let dec = new TextDecoder();
-    console.log(dec.decode(decrypted));
     return JSON.parse(JSON.parse(dec.decode(decrypted)));
 
   }
@@ -69,10 +67,5 @@ export class EncryptDecryptDataService {
       true,
       ["encrypt", "decrypt"]
     );
-  }
-  async check(password: string) {
-    const message = "Hello there";
-    await this.encryptData(password, message);
-    //console.log(await this.decryptData(password));
   }
 }

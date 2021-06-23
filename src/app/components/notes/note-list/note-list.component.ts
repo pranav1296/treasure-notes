@@ -16,7 +16,6 @@ export class NoteListComponent implements OnInit {
     private saveDataService: SaveDataService) { }
 
   ngOnInit(): void {
-    console.log("Init note list component");
     this.notes = this.saveDataService.getNotes();
     this.subscription = this.saveDataService.notesChanged.subscribe(
       (notes: Note[]) => {

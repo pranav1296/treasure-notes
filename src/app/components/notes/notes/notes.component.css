@@ -5,3 +5,9 @@
   height: 100%;
   width: 100%;
 }
+.note-list-wrapper {
+  background-color: #ebece7;
+}
+.notes-border {
+  border: 1px solid #d1d3cc;
+}

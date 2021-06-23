@@ -71,7 +71,6 @@ export class SaveDataService {
     this.saveNotes();
   }
   async saveNotes() {
-    //this.data.notes = this.notes;
     const { ciphertext, salt, iv } = await this.encryptDecryptService.encryptData(this.password, JSON.stringify(this.notes));
     const encryptedObj = {
       ciphertext: JSON.stringify(Array.from(new Uint8Array(ciphertext))),
@@ -79,6 +78,5 @@ export class SaveDataService {
       iv: JSON.stringify(Array.from(new Uint8Array(iv)))
     }
     localStorage.setItem(this.email + this.password, JSON.stringify(encryptedObj));
-    console.log("Done");
   }
 }
